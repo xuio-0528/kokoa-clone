@@ -1,10 +1,15 @@
-.status-bar__column{
-  width: 33%;
-}
 .status-bar {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding : 5px 3px;
+  top: 0;
+  background-color: white;
+}
+.status-bar__column{
+  width: 33%;
 }
 .status-bar__column:nth-child(2){
   display: flex;
