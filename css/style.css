@@ -9,6 +9,11 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+@import "components/icon-row.css";
+@import "components/alternative-screen-header.css";
 /* screens */
 @import "screens/login.css";
 body{
@@ -23,6 +28,6 @@ body{
   background-color: tomato;
   width :5px;
   height: 5px;
-  display: flex;
+  display: block;
   border-radius: 50%;
 }

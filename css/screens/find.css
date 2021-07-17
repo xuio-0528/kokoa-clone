@@ -6,25 +6,7 @@
   bottom: 17px;
   left: -5px;
 }
-.find-icons{
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 30px 12px 10px;
-  box-sizing: border-box;
-}
 
-.find-icons__icon{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.find-icons__icon i{
-  font-size: 35px;
-}
-.find-icons__icon span{
-  text-align: center;
-  margin-top: 15px;
-}
 .recommended-friends{
   margin: 8px 0px;
   padding: 20px 0px;
@@ -113,4 +95,23 @@
 }
 .open-post__heart-count span{
   margin-left: 3px;
+}
+
+@keyframes heartBeat{
+  0%{
+    color: white;
+    transform: none;
+  }
+  50%{
+    color: tomato;
+    transform: scale(1.2);
+  }
+  100%{
+    color : white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i{
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
